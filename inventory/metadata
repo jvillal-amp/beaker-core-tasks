@@ -1,0 +1,10 @@
+[General]
+name=/distribution/inventory
+owner=Beaker Developers <beaker-devel@lists.fedorahosted.org>
+description=This refreshes the database with the hardware inventory of the machine its run on
+license=GPLv2+
+
+[restraint]
+entry_point=./runtest.sh
+dependencies=beakerlib,kvm,make,beaker-system-scan
+max_time=15m
